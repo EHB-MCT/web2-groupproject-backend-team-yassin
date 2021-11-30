@@ -10,7 +10,7 @@ const port = 8080
 
 app.use(bodyParser.json())
 app.use(cors())
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
     console.log(`application listening on port ${port}`)
 })
 

@@ -6,7 +6,7 @@ import * as db from './db.js'
 const mongoClient = mongoDb.MongoClient
 
 const app = express()
-const port = env.process.PORT || 8080
+const port = process.env.PORT || 8080
 
 app.use(bodyParser.json())
 app.use(cors())
